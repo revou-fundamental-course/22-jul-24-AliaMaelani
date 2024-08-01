@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: flex-end;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    display: block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.menu a:last-child {
+    border-right: none;
+}
+
+.content {
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.header h2 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 60%;
+}
+
+.testimonial img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info p {
+    font-weight: bold;
+}
+
+.info ul {
+    list-style-type: none;
+    padding-left: 0;
+    counter-reset: list-counter;
+}
+
+.info ul li {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    counter-increment: list-counter;
+}
+
+.info ul li::before {
+    content: counter(list-counter);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.contact-form {
+    width: 35%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-form h3 {
+    margin-top: 0;
+}
+
+.contact-form input, .contact-form select, .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.package {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.package img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-info {
+    padding: 20px;
+    flex: 1;
+}
+
+.package-info h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.package-info p {
+    margin: 10px 0 0;
+    color: #555;
+}
+
+#callUsSection {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
